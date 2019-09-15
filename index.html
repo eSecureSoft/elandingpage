@@ -786,58 +786,5 @@
 		<script src="js/custom.js"></script>
 		<script src="js/theme.init.js"></script>
 		<script src="js/custommodal.js"></script>
-		<script>
-			function function_modal(imagesource, client_name, skill1, skill2, skill3, date, url, description){
-				var str='';
-				str+='<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"';
-				str+='aria-hidden="true">';
-				str+='<div class="modal-dialog modal-lg modal-dialog-centered">';
-				str+='<div class="modal-content">';
-				str+='<div class="modal-header">';
-				str+='<button type="button" class="close" data-dismiss="modal" aria-label="Close">';
-				str+='<span aria-hidden="true">&times;</span>';
-				str+='</button>';
-				str+='</div>';
-				str+='<div class="modal-body">';
-				str+='<div class="row pb-4 mb-2">';
-				str+='<div class="col-sm-6">';
-				str+='<div class="img-thumbnail border-0 border-radius-0 p-0 d-block">';
-				str+='<img src="'+imagesource+'" class="img-fluid border-radius-0" alt="">';
-				str+='</div>';
-				str+='</div>';
-				str+='<div class="col-sm-6">';
-				str+='<h2 class="text-color-dark font-weight-bold text-4 mb-0 mt-4">Project Details</h2>';
-				str+='<ul class="list list-icons list-primary list-borders text-2">';
-				str+='<li>';
-				str+='<i class="fa fa-caret-right left-10"></i> <strong class="text-color-primary">Client:</strong>'+client_name;
-				str+='</li>';
-				str+='<li>';
-				str+='<i class="fa fa-caret-right left-10"></i> <strong class="text-color-primary">Date:</strong>'+date;
-				str+='</li>';
-				str+='<li>';
-				str+='<i class="fa fa-caret-right left-10"></i> <strong class="text-color-primary">Skills:</strong>';
-				str+='<span class="badge badge-dark badge-sm badge-pill px-2 py-1 ml-1">'+skill1+'</span>';
-				str+='<span class="badge badge-dark badge-sm badge-pill px-2 py-1 ml-1">'+skill2+'</span>';
-				str+='<span class="badge badge-dark badge-sm badge-pill px-2 py-1 ml-1">'+skill3+'</span>';
-				str+='</li>';
-				str+='<li>';
-				str+='<i class="fa fa-caret-right left-10"></i> <strong class="text-color-primary">Project URL:</strong> <span class=';
-				str+='"text-dark">'+url+'</span>';
-				str+='</li>';
-				str+='</ul>';
-				str+='</div>';
-				str+='</div>';
-				str+='<div>';
-				str+='<h2 class="text-color-dark font-weight-bold text-4 mb-0">Project Description</h2>';
-				str+='<p style="font-size: 13px;">'+description+'</p>';
-				str+='</div>';
-				str+='</div>';
-				str+='</div>';
-				str+='</div>';
-				str+='</div>';
-				$('#modal-p').html(str);
-				$('#exampleModal').modal('show');
-			}
-		</script>
 	</body>
 </html>
