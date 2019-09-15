@@ -9,20 +9,17 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400" rel="stylesheet" type="text/css">
 		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/bootstrap.min.css">		
-		<!-- <link rel="stylesheet" href="css/all.min.css">	 -->	
 		<link rel="stylesheet" href="css/animate.min.css">		
 		<link rel="stylesheet" href="css/simple-line-icons.min.css">		
 		<link rel="stylesheet" href="css/owl.carousel.min.css">		
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">		
-		<link rel="stylesheet" href="css/magnific-popup.min.css">
 		<link rel="stylesheet" href="css/theme.css">
 		<link rel="stylesheet" href="css/theme-elements.css">
 		<link rel="stylesheet" href="css/settings.css">
 		<link rel="stylesheet" href="css/layers.css">
 		<link rel="stylesheet" href="css/navigation.css">
 		<link rel="stylesheet" href="css/default.css">		
-		<script src="js/style.switcher.localstorage.js"></script>
-		<script src="js/modernizr.min.js"></script>
+		<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/1/jquery.min.js"></script> -->
 		<style>
 			.sbg-primary {
 				background-color: #262b2d !important;
@@ -368,7 +365,7 @@
 					<div class="row pb-5 mb-5">
 						<div class="col-12 col-md-6 col-lg-3 col-xl-3 pb-3">
 							<div class="portfolio-item">
-								<!-- <a href="#" data-toggle="modal" data-target="#exampleModalLong"> -->
+								<div onclick="function_modal('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')">
 									<span class="thumb-info thumb-info-lighten">
 										<span class="thumb-info-wrapper">
 											<img src="images/project001.jpg" class="img-fluid border-radius-0" alt="">
@@ -377,7 +374,7 @@
 											</span>
 										</span>
 									</span>
-								<!-- </a> -->
+								</div>
 							</div>
 						</div>
 						<div class="col-12 col-md-6 col-lg-3 col-xl-3 pb-3">
@@ -745,29 +742,10 @@
 						</div>
 					</div>
 				</section>
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-				  Launch demo modal
-				</button>
+				
 
 				<!-- Modal -->
-				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				  <div class="modal-dialog" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body">
-				        ...
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				        <button type="button" class="btn btn-primary">Save changes</button>
-				      </div>
-				    </div>
-				  </div>
+				<div id="modal-p">
 				</div>
 			</div>
 			
@@ -782,7 +760,7 @@
 					</div>
 				</div>
 			</footer>
-
+			<button class="btn btn-lg" onclick="readTextFile('Resource/project1.txt')">Click</button>
 		</div>
 
 		<!-- Vendor -->
@@ -790,7 +768,6 @@
 		<script src="js/jquery.appear.min.js"></script>		
 		<script src="js/jquery.easing.min.js"></script>		
 		<script src="js/jquery.cookie.min.js"></script>		
-		<script src="js/style.switcher.js" id="styleSwitcherScript" data-base-path="" data-skin-src=""></script>		
 		<script src="js/popper.min.js"></script>		
 		<script src="js/bootstrap.min.js"></script>		
 		<script src="js/common.min.js"></script>		
@@ -800,25 +777,67 @@
 		<script src="js/jquery.lazyload.min.js"></script>		
 		<script src="js/jquery.isotope.min.js"></script>		
 		<script src="js/owl.carousel.min.js"></script>		
-		<!-- <script src="js/jquery.magnific-popup.min.js"></script>		 -->
 		<script src="js/jquery.vide.min.js"></script>		
 		<script src="js/vivus.min.js"></script>
-		
-		<!-- Theme Base, Components and Settings -->
 		<script src="js/theme.js"></script>
-		
-		<!-- Current Page Vendor and Views -->
 		<script src="js/jquery.themepunch.tools.min.js"></script>		
 		<script src="js/jquery.themepunch.revolution.min.js"></script>
 		<script src="js/view.contact.js"></script>
-		
-		<!-- Theme Custom -->
 		<script src="js/custom.js"></script>
-		
-		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
-
-		<!-- Examples -->
-		<!-- <script src="js/examples.portfolio.js"></script>  -->
+		<script src="js/custommodal.js"></script>
+		<script>
+			function function_modal(imagesource, client_name, skill1, skill2, skill3, date, url, description){
+				var str='';
+				str+='<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"';
+				str+='aria-hidden="true">';
+				str+='<div class="modal-dialog modal-lg modal-dialog-centered">';
+				str+='<div class="modal-content">';
+				str+='<div class="modal-header">';
+				str+='<button type="button" class="close" data-dismiss="modal" aria-label="Close">';
+				str+='<span aria-hidden="true">&times;</span>';
+				str+='</button>';
+				str+='</div>';
+				str+='<div class="modal-body">';
+				str+='<div class="row pb-4 mb-2">';
+				str+='<div class="col-sm-6">';
+				str+='<div class="img-thumbnail border-0 border-radius-0 p-0 d-block">';
+				str+='<img src="'+imagesource+'" class="img-fluid border-radius-0" alt="">';
+				str+='</div>';
+				str+='</div>';
+				str+='<div class="col-sm-6">';
+				str+='<h2 class="text-color-dark font-weight-bold text-4 mb-0 mt-4">Project Details</h2>';
+				str+='<ul class="list list-icons list-primary list-borders text-2">';
+				str+='<li>';
+				str+='<i class="fa fa-caret-right left-10"></i> <strong class="text-color-primary">Client:</strong>'+client_name;
+				str+='</li>';
+				str+='<li>';
+				str+='<i class="fa fa-caret-right left-10"></i> <strong class="text-color-primary">Date:</strong>'+date;
+				str+='</li>';
+				str+='<li>';
+				str+='<i class="fa fa-caret-right left-10"></i> <strong class="text-color-primary">Skills:</strong>';
+				str+='<span class="badge badge-dark badge-sm badge-pill px-2 py-1 ml-1">'+skill1+'</span>';
+				str+='<span class="badge badge-dark badge-sm badge-pill px-2 py-1 ml-1">'+skill2+'</span>';
+				str+='<span class="badge badge-dark badge-sm badge-pill px-2 py-1 ml-1">'+skill3+'</span>';
+				str+='</li>';
+				str+='<li>';
+				str+='<i class="fa fa-caret-right left-10"></i> <strong class="text-color-primary">Project URL:</strong> <span class=';
+				str+='"text-dark">'+url+'</span>';
+				str+='</li>';
+				str+='</ul>';
+				str+='</div>';
+				str+='</div>';
+				str+='<div>';
+				str+='<h2 class="text-color-dark font-weight-bold text-4 mb-0">Project Description</h2>';
+				str+='<p style="font-size: 13px;">'+description+'</p>';
+				str+='</div>';
+				str+='</div>';
+				str+='</div>';
+				str+='</div>';
+				str+='</div>';
+				$('#modal-p').html(str);
+				$('#exampleModal').modal('show');
+			}
+		</script>
 	</body>
 </html>
