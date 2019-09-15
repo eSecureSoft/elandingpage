@@ -11,7 +11,6 @@ function readTextFile(file)
                 var allText = rawFile.responseText;
                 var dataarray = allText.split("**");
                 function_modal(dataarray[0], dataarray[1], dataarray[2], dataarray[3], dataarray[4], dataarray[5]);
-                console.log(allText);
             }
         }
     }
