@@ -1,0 +1,1 @@
+images/project001.jpg**CBC**Joomla,phpMyAdmin,Chronoform**31st May, 2019**https://coxsbazarbeachclub.com**This is a introductory website for CBC. Also, it has e-commerce features which allows installment payments for hotel owners or potential owners.
