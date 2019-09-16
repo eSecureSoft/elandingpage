@@ -1,1 +1,1 @@
-images/project006.jpg**CBC**ASP.NET MVC%,MSSQL,HTML CSSS Javascript**31st May, 2019**Private**This is a webapp for Heritage administrators. They can maintain all owner's information, dividend information, keep track of owner's posts, comments payments and various matters.
+images/project006.jpg**CBC**ASP.NET MVC5,MSSQL,HTML CSS Javascript**31st May, 2019**Private**This is a webapp for Heritage administrators. They can maintain all owner's information, dividend information, keep track of owner's posts, comments payments and various matters.

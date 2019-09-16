@@ -1,1 +1,1 @@
-images/project004.jpg**CBC**ASP.NET MVC%,MSSQL,HTML CSSS Javascript**31st May, 2019**Private**This is a webapp for CBC administrators. They can maintain all owner's information and keep track of owner's EMI payments.
+images/project004.jpg**CBC**ASP.NET MVC5,MSSQL,HTML CSS Javascript**31st May, 2019**Private**This is a webapp for CBC administrators. They can maintain all owner's information and keep track of owner's EMI payments.
